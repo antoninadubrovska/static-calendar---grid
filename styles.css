@@ -1,0 +1,122 @@
+/* * {
+    background-color: #e9e9e9;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    
+}
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 0.1em;
+width: 350px;
+height: 324px; 
+border-radius: 0.3em; 
+overflow: hidden;
+box-shadow: 0.5px 1px 2px 2px #e5e5e5 ;
+}
+
+
+
+.Week-day {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    
+}
+
+.month-year {
+    grid-column: span 7;
+    background-color: #fe2c2c;
+    
+    
+    align-items: center;
+    color: #fefcfc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: space-around
+    /* height: 50px; */
+    
+}
+
+.month-arrow-switcher {
+    background-color: #fe2c2c;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    background-color: transparent;
+
+}
+
+.month-current {
+    /* background-color: #fe2c2c; */
+    background-color: transparent;
+}
+
+
+.day {
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.work-day {
+    background-color: #f4f2f2;
+}
+
+.weekend {
+    background-color: #e7e6e6;
+}
+
+.inactive-month-date {
+    color: #b6b6b6;
+}
+
+/* .day {
+    background-color: #f2f2f2;
+} */
+
+.current-day {
+    height: 32px;
+    width: 32px;
+    background-color: #fe2c2c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #f2f2f2;
+}
+
+.work-day:hover {
+    background-color: #fbf8f8;
+    color: #fe2c2c;
+}
+
+.weekend:hover {
+    background-color: #ebebeb;
+    color: #fe2c2c;
+
+}
+
+.Week-day:hover {
+    color: #fe2c2c;
+}
+
+.inactive-month-date:hover {
+    color: darkgray;
+
+}
+
+.month-current:hover,
+.month-arrow-switcher:hover {
+    color: black;
+}
